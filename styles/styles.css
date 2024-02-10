@@ -111,9 +111,13 @@ h1 {
 }
 
 .navbar a:hover {
-    background-color: white;
     color: black;
     margin: 10px;
+
+}
+
+.navbar:hover {
+    background-color: white;
 }
 
 .navbar a img {
@@ -130,11 +134,16 @@ h1 {
     opacity: 0;
 }
 
-.navbar a:hover img.hover-img {
+.navbar:hover a {
+    color: black;
+    ;
+}
+
+.navbar:hover img.hover-img {
     opacity: 1;
 }
 
-.navbar a:hover img:not(.hover-img) {
+.navbar:hover img:not(.hover-img) {
     opacity: 0;
 }
 
