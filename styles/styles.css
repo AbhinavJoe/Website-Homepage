@@ -189,22 +189,28 @@ h1 {
     position: relative;
     background-color: #333;
     color: white;
-    height: 80vh;
+    height: 85vh;
 }
 
-.main-section2-article-wrapper figure::before {
+.main-section2-image-wrapper figure::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
-.main-section2-article-wrapper figcaption {
+.main-section2-image-wrapper figcaption {
     position: relative;
     top: -25px;
     left: 10px;
     z-index: 2;
 }
 
-.main-section2-article-wrapper {
+.main-section2-image-wrapper {
     position: relative;
     top: -100px;
     display: flex;
