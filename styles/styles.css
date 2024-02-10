@@ -183,6 +183,18 @@ h1 {
     height: 80vh;
 }
 
+.main-section2-article-wrapper figure::before {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.main-section2-article-wrapper figcaption {
+    position: relative;
+    top: -25px;
+    left: 10px;
+    z-index: 2;
+}
+
 .main-section2-article-wrapper {
     position: relative;
     top: -100px;
