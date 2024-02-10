@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 500;
+    font-size: 150px;
+    color: white;
+}
+
+
+/* ........Header....... */
+.header-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/header.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+
+.header-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header-heading-wrapper {
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    z-index: 2;
+}
+
+.header-heading-wrapper p {
+    color: white;
+}
+
+.header-all-cases {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.header-all-cases img {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100px;
+    background-color: transparent;
+    border-right: 1px solid gray;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+
+.navbar a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    transform: rotate(-90deg);
+    transition: 0.3s;
+    /* overflow: hidden; */
+    /* Ensure no overflow from rotated elements */
+    height: 50px;
+    width: 50px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    margin: 10px;
+}
+
+.navbar a img {
+    height: 50px;
+    width: 50px;
+    transform: rotate(90deg);
+    /* Correct rotation for the images */
+    transition: opacity 0.3s;
+    /* Smooth transition for the hover effect */
+}
+
+.navbar a img.hover-img {
+    position: absolute;
+    /* Position it over the first image */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* Make it invisible by default */
+}
+
+.navbar a:hover img.hover-img {
+    opacity: 1;
+}
+
+.navbar a:hover img:not(.hover-img) {
+    opacity: 0;
+}
+
+
+/* ........Main....... */
+.main-section1 {
+    position: relative;
+    background: #f8f8f8;
+    padding: 80px;
+    text-align: left;
+}
+
+.main-section1 h2 {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.main-section1 p {
+    color: #666;
+    font-family: arial, sans-serif;
+}
+
+.section1-height {
+    height: 100vh;
+}
+
+.main-section1-heading-wrapper {
+    position: inherit;
+    left: 100px;
+}
+
+.main-section1-article-wrapper {
+    position: relative;
+    display: flex;
+    align-content: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.main-section2 {
+    position: relative;
+    background-color: #333;
+    color: white;
+    height: 175vh;
+}
+
+.main-section3 {
+    position: relative;
+    background-color: #000;
+    color: white;
+    height: 60vh;
+}
+
+.section5-height {
+    position: relative;
+    height: 85vh;
+}
+
+
+/* ........Footer....... */
+.footer-background {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background-image: url('../assets/footer.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.footer-background h2 p {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-bottom {
+    position: sticky;
+    top: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-botton p span {
+    text-decoration: underline;
+}
