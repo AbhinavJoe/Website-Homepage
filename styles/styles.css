@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 *,
 *::before,
@@ -34,9 +35,6 @@ h1 {
     color: white;
 }
 
-hr {
-    color: gray;
-}
 
 /* ........Header....... */
 .header-background {
@@ -105,6 +103,7 @@ hr {
     align-items: center;
     justify-content: center;
     padding: 10px 15px;
+    font-weight: bold;
     font-size: 18px;
     color: white;
     transform: rotate(-90deg);
@@ -210,9 +209,13 @@ hr {
     text-align: center;
 }
 
+.main-section2-article-wrapper hr {
+    width: 50%;
+}
+
 .main-section-article-wrapper-num {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
-    font-size: 80px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 70px;
 }
 
 .main-section2-image-wrapper::before {
