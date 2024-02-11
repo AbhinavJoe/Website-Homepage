@@ -344,6 +344,9 @@ h1 {
 .main-section4-profile img {
     height: 50px;
     border-radius: 50px;
+}
+
+.black-white {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
@@ -379,6 +382,31 @@ h1 {
     background-color: #0e0d0d;
     color: white;
     height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main-section5-team-profiles {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.main-section5-h2-p-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-;
+}
+
+.main-section5-team-profiles img {
+    width: 75%;
 }
 
 .section6-height {
