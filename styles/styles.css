@@ -194,28 +194,33 @@ h1 {
     height: 85vh;
 }
 
-/* .main-section2-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-} */
-
 .main-section2-article-wrapper {
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    font-family: 'Fjalla One', sans-serif;
     text-align: center;
 }
 
-.main-section2-article-wrapper hr {
-    width: 50%;
+.divider {
+    width: 150px;
+    margin: 0 auto;
+    border: none;
+    background-color: gray;
+    height: 1px;
+    margin: 20px 20px;
 }
 
 .main-section-article-wrapper-num {
     font-family: 'Fjalla One', sans-serif;
     font-size: 70px;
+}
+
+.main-section2-article-wrapper article h2 {
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .main-section2-image-wrapper::before {
