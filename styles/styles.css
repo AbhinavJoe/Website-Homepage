@@ -191,7 +191,14 @@ h1 {
     position: relative;
     background-color: #1d1d1d;
     color: white;
-    height: 85vh;
+    height: 100vh;
+}
+
+.main-section2-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-section2-article-wrapper {
@@ -223,15 +230,18 @@ h1 {
     font-family: 'Oswald', sans-serif;
 }
 
-.main-section2-image-wrapper::before {
-    content: '';
+.main-section2-image-wrapper img {
+    position: relative;
+    display: block;
+}
+
+.overlay {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    top: -10px;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-section2-image-wrapper figcaption {
@@ -253,7 +263,7 @@ h1 {
     position: relative;
     background-color: #1d1d1d;
     color: white;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,7 +310,7 @@ h1 {
     position: relative;
     background-color: #0e0d0d;
     color: white;
-    height: 55vh;
+    height: 70vh;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -381,7 +391,7 @@ h1 {
     position: relative;
     background-color: #0e0d0d;
     color: white;
-    height: 55vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
