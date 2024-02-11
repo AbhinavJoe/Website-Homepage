@@ -1,1 +1,1 @@
-# Website Homepage - HTML & CSS
+# Sample Website Landing Page - HTML & CSS
