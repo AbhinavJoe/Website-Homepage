@@ -433,6 +433,18 @@ h1 {
 .section6-height {
     position: relative;
     height: 85vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section6-height table{
+    border: 1px solid gray;
+}
+
+.section6-height table img {
+    height: 100px;
 }
 
 
